@@ -10,22 +10,27 @@
     --marromMedio-color: #DEAC80;
     --marromClaro-color: #F7DCB9;
 }
-/* Logo, barra e redes*/
-.logoBarraRedes{
+/* Logo, barra e icones*/
+.logoBarraIcones{
     display: flex;
     background-color: var(--verde-color);
+    justify-content: center;
+    padding-right: 15%;
+}
+/* Logo da paina*/
+.logoImagem img{
+   width: 300px;
 }
 /* Barra de pesquisa*/
 .buscaBox{
-    background-color: white;
+    background-color: var(--marromClaro-color);
     width: 40%;
     height: 1%;
     overflow: hidden;
     display: flex;
     border-radius: 15px;
     margin-top: 4%;
-    margin-left: 8%;
-    border: 1px solid var(--marromEscuro-color);
+    border: 1px solid;
 }
 
 .buscaBox .lupaBusca, .buscaBox .btnFecha{
@@ -35,7 +40,6 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: var(--marromEscuro-color);
 }
 
 .buscaBox .inputBusca i{
@@ -52,20 +56,32 @@
     outline: 0;
     font-size: 20px;
     width: 130%;
+    background-color: var(--marromClaro-color);
 }
-/* Redes sociais*/
-.redesSociais{
+/* Telefone, carrinho e perfil*/
+.telCarPerf{
     display: flex;
     margin-top: 5%;
     margin-left: 3%;
 }
 /* Telefone*/
 .telefone i{
-    background-color: var(--marromEscuro-color);
+    background-color: var(--marromClaro-color);
     border-radius: 20px;
     padding: 50%;
-    border: 1px solid var(--marromClaro-color);
+    border: 1px solid black;
 }
 .telefone a{
-    color: var(--marromClaro-color);
+    color: black;
+}
+/* Carrinho de compras*/
+.carrinhoCompras i{
+    background-color: var(--marromClaro-color);
+    border-radius: 20px;
+    padding: 53%;
+    border: 1px solid black;
+    margin-left: 200%;
+}
+.carrinhoCompras a{
+    color: black;
 }
