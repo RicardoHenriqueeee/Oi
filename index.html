@@ -17,7 +17,7 @@
     <header><!-- Cabeçalho-->
         <div class="logoBarraIcones"><!-- Logo, barra e icones-->
             <div class="logoImagem"><!-- Logo da pagina-->
-                <a><img src="img/logoPetShop.png" alt="logoSite"></a>
+                <a href="index.html"><img src="img/logoPetShop.png" alt="logoSite"></a>
             </div>
             <div class="buscaBox"><!-- Barra de pesquisa (Não está funcional, apenas visual)-->
                 <div class="lupaBusca"><!-- Icone de lupa-->
@@ -27,17 +27,57 @@
                     <input type="text" name="" placeholder="Seu pet está ansioso pela busca!" width="100px">
                 </div>
             </div>
-            <div class="telCarPerf"><!-- Telefone, carrinho e perfil-->
+            <div class="telCarPerf">
                 <div class="telefone"><!-- Icone de telefone-->
-                    <a href=""><i class="bi bi-telephone"></i></a>
+                    <a href=""><img src="img/iconeTelefone.png" alt="iconeTelefone"></a>
                 </div>
                 <div class="carrinhoCompras"><!-- Icone do carrinho de compras-->
-                    <a href=""><i class="bi bi-cart2"></i></a>
+                    <a href=""><img src="img/carrinhoCompras.png" alt="iconeCarrinhoCompras"></a>
+                </div>
+                <div class="juntaTextoIcone">
+                    <div class="iconePerfil"><!-- Icone do perfil-->
+                        <a href=""><img src="img/perfilIcone.png" alt="Iconeperfil"></a>
+                    </div>
+                    <div class="textoPerfil"><!-- Texto do perfil-->
+                        <a href="">
+                            <p>Entrar<br>Cadastre-se</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="menuOpcoes"><!-- Menu de opções-->
+            <a href="index.html">
+                <p>Inicio</p>
+            </a>
+            <a href="">
+                <p>Serviços</p>
+            </a>
+            <a href="">
+                <p>Agendamentos</p>
+            </a>
+            <a href="">
+                <p>Loja</p>
+            </a>
+            <a href="">
+                <p>Ajuda</p>
+            </a>
+        </div>
+        <hr color="black" size="0.5">
     </header>
-
+    <div class="sliderPrincipal"><!-- Carrosel da pagina inicial-->
+        <!-- Botão de voltar-->
+        <button id="botaoAnterior"><img src="img/setaAnterior.png" alt="botaoAnterior"></button>
+        <div class="sliderImagem"><!-- Imagens do carrosel-->
+            <img src="img/gato1.jpg" alt="gato1" class="slide on">
+            <img src="img/gato2.jpg" alt="gato2" class="slide on">
+            <img src="img/gato3.jpg" alt="gato3" class="slide on">
+            <img src="img/gato4.jpg" alt="gato4" class="slide on">
+        </div>
+        <!-- Botão de proximo-->
+        <button id="botaoProximo"><img src="img/setaProximo.png" alt="botaoProximo"></button>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
