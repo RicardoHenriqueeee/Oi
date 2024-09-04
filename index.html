@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link de conexão com a biblioteca de icones do bootstrap-->
+    <!-- Link de conexão com a biblioteca de icones do bootstrap (Acabei não utilizando mas mantive aqui)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Link de conexão com o style.css-->
     <link rel="stylesheet" href="style.css">
@@ -46,7 +46,7 @@
                 </div>
             </div>
         </div>
-        <div class="menuOpcoes"><!-- Menu de opções-->
+        <nav class="menuOpcoes"><!-- Menu de opções-->
             <a href="index.html">
                 <p>Inicio</p>
             </a>
@@ -57,27 +57,50 @@
                 <p>Agendamentos</p>
             </a>
             <a href="">
-                <p>Loja</p>
+                <p>Produtos</p>
             </a>
             <a href="">
-                <p>Ajuda</p>
+                <p>Localização</p>
             </a>
+            </ul>
+        </nav>
+    </header><!-- Fim do cabeçalho-->
+    <main><!-- Corpo da pagina-->
+        <div class="sliderPrincipal"><!-- Carrosel da pagina inicial-->
+            <!-- Botão de voltar-->
+            <button id="botaoAnterior"><img src="img/setaAnterior.png" alt="botaoAnterior"></button>
+            <div class="sliderImagem"><!-- Imagens do carrosel-->
+                <img src="img/gato1.jpg" alt="gato1" class="slide on">
+                <img src="img/gato2.jpg" alt="gato2" class="slide on">
+                <img src="img/gato3.jpg" alt="gato3" class="slide on">
+                <img src="img/gato4.jpg" alt="gato4" class="slide on">
+            </div>
+            <!-- Botão de proximo-->
+            <button id="botaoProximo"><img src="img/setaProximo.png" alt="botaoProximo"></button>
         </div>
-        <hr color="black" size="0.5">
-    </header>
-    <div class="sliderPrincipal"><!-- Carrosel da pagina inicial-->
-        <!-- Botão de voltar-->
-        <button id="botaoAnterior"><img src="img/setaAnterior.png" alt="botaoAnterior"></button>
-        <div class="sliderImagem"><!-- Imagens do carrosel-->
-            <img src="img/gato1.jpg" alt="gato1" class="slide on">
-            <img src="img/gato2.jpg" alt="gato2" class="slide on">
-            <img src="img/gato3.jpg" alt="gato3" class="slide on">
-            <img src="img/gato4.jpg" alt="gato4" class="slide on">
+        <div><!-- -->
+
         </div>
-        <!-- Botão de proximo-->
-        <button id="botaoProximo"><img src="img/setaProximo.png" alt="botaoProximo"></button>
-    </div>
-    <script src="script.js"></script>
+    </main><!-- Fim do corpo da pagina-->
+    <footer><!-- Parte de baixo do pagina-->
+        <br>
+        <div class="footerPrincipal">
+            <img src="img/youtubeEntretenimento.png" alt="youtubeIcon">
+            <img src="img/whatsappRedeSocial.png" alt="whatsapp-icon">
+            <img src="img/twitterRedeSocial.png" alt="twitter-icon">
+            <img src="img/instagramRedeSocial.png" alt="instagram-icon">
+            <div class="faleConosco">
+                <a href="">
+                    <p>Fale conosco</p>
+                </a>
+            </div>
+            <hr color="#914F1E" size="1">
+            <div class="direitosReservadosFooter">
+                <p>© Todos direitos reservados</p>
+            </div>
+        </div>
+    </footer><!-- Fim da parte de baixo do pagina-->
+    <script src="script.js"></script><!-- Conexão com o script.js-->
 </body>
 
 </html>
