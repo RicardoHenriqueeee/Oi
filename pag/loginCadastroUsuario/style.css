@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Pagina*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+/* Paleta de cores*/
+:root {
+    --verde-color: #B5C18E;
+    --marromEscuro-color: #914F1E;
+    --marromMedio-color: #DEAC80;
+    --marromClaro-color: #F7DCB9;
+    --fonte-primaria: "Noto Sans", sans-serif;
+}
+
+/* Logo, barra e icones*/
+.logoBarraIcones {
+    display: flex;
+    background-color: var(--marromMedio-color);
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Logo da pagina*/
+.logoImagem img {
+    width: 120px;
+    height: 109px;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+}
+
+/* Barra de pesquisa*/
+.buscaBox {
+    background-color: white;
+    width: 700px;
+    height: 1%;
+    overflow: hidden;
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid;
+}
+
+.buscaBox .lupaBusca,
+.buscaBox .btnFecha {
+    min-width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buscaBox .inputBusca i {
+    font-size: 35px;
+}
+
+.inputBusca {
+    width: 400px;
+}
+
+.buscaBox .inputBusca {
+    left: 80px;
+    line-height: 50px;
+}
+
+.buscaBox .inputBusca input {
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    width: 130%;
+    background-color: white;
+}
+
+/* Todos icones*/
+.telCarPerf {
+    display: flex;
+    align-items: center;
+}
+
+.telCarPerf img {
+    padding-right: 20px;
+}
+
+/* Telefone*/
+.telefone img {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding-left: 15px;
+}
+
+.telefone a {
+    color: black;
+}
+
+/* Carrinho de compras*/
+.carrinhoCompras img {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.carrinhoCompras a {
+    color: black;
+}
+
+/* Icone perfil*/
+.iconePerfil a {
+    color: black;
+}
+
+.iconePerfil {
+    display: flex;
+    align-items: center;
+}
+
+.iconePerfil img {
+    width: 35px;
+    height: 35px;
+}
+
+.textoPerfil {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+    font-family: var(--fonte-primaria);
+    font-size: medium;
+    font-weight: 600;
+}
+
+.textoPerfil :hover {
+    color: var(--marromEscuro-color);
+    transform: scale(1.07);
+    transition: 0.3s;
+}
+
+.textoPerfil a {
+    text-decoration: none;
+    color: white;
+}
+
+.juntaTextoIcone {
+    display: flex;
+    height: 50px;
+    width: 150px;
+}
+
+/* Menu de opções*/
+.menuOpcoes {
+    display: flex;
+    background-color: var(--marromMedio-color);
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    padding-bottom: 10px;
+}
+
+.menuOpcoes a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte-primaria);
+    font-size: medium;
+    font-weight: 600;
+}
+
+.menuOpcoes a:hover {
+    color: var(--marromEscuro-color);
+    text-decoration: overline solid 2px;
+}
+
+/* Carrosel da pagina principal*/
+.sliderPrincipal {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 30px;
+}
+
+.sliderImagem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.on {
+    opacity: 1;
+}
+
+#botaoAnterior,
+#botaoProximo {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#botaoAnterior img,
+#botaoProximo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer da pagina*/
+.footerPrincipal {
+    background-color: var(--marromClaro-color);
+    height: 300px;
+}
+
+.footerPrincipal img {
+    width: 50px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.faleConosco {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.faleConosco p {
+    color: var(--marromEscuro-color);
+    font-family: var(--fonte-primaria);
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.faleConosco a {
+    text-decoration: none;
+}
+
+.faleConosco a:hover {
+    transition: 0.25s;
+    transform: scale(1.2);
+}
+
+.direitosReservadosFooter {
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+    color: var(--marromEscuro-color);
+    font-family: var(--fonte-primaria);
+}
