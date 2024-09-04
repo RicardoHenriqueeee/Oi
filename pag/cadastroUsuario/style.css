@@ -180,105 +180,203 @@ body {
     text-decoration: overline solid 2px;
 }
 
-/* Login do usuário*/
-.displayForm{
+/* Cadastro do usuário*/
+.displayGeral {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    padding: 100px;
+    font-family: var(--fonte-primaria);
+}
+
+.formQuadrado {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-.parteForaForm {
-    width: 420px;
-    background: var(--marromEscuro-color);
-    color: white;
-    border-radius: 10px;
-    padding: 30px 40px;
+    background-color: var(--marromEscuro-color);
+    padding: 1rem;
 }
 
-.parteForaForm h1 {
-    font-size: 36px;
-    text-align: center;
-    font-family: var(--fonte-primaria);
+.formQuadrado img {
+    width: 31rem;
 }
 
-.parteForaForm .inputCaixa {
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
 }
 
-.inputCaixa input{
-    width: 90%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgb(255, 255, 255, .2);
-    border-radius: 40px;
-    font-size: 16px;
-    color: white;
-    font-family: var(--fonte-primaria);
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.inputCaixa input::placeholder{
-    color: white;
-}
-
-.parteForaForm .relembrarDepois{
+.formCabecalho {
+    margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
-    margin: -15px 0 15px;
-    font-family: var(--fonte-primaria);
 }
 
-.relembrarDepois label input{
-    accent-color: white;
-    margin-right: 3px;
+.botaoLogin {
+    display: flex;
+    align-items: center;
 }
 
-.relembrarDepois a{
-    color: white;
-    text-decoration: none;
-}
-
-.relembrarDepois a:hover{
-    text-decoration: underline;
-}
-
-.parteForaForm .botaoEnviar{
-    width: 100%;
-    height: 45px;
-    background: white;
+.botaoLogin button {
     border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px black;
+    background-color: var(--marromEscuro-color);
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
-    font-family: var(--fonte-primaria);
 }
 
-.parteForaForm .cadastroLink{
-    font-size: 14px;
-    text-align: center;
-    margin-top: 20px 0 15px;
-    font-family: var(--fonte-primaria);
+.botaoLogin button:hover {
+    background-color: var(--marromEscuro-color);
 }
 
-.cadastroLink p a{
-    color: white;
+.botaoLogin button a {
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
+    color: white;
 }
 
-.cadastroLink p a:hover{
-    text-decoration: underline;
+.formCabecalho h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--marromEscuro-color);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.inputGrupo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.inputCaixa {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.inputCaixa input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.inputCaixa input:hover {
+    background-color: #eeeeee75;
+}
+
+.inputCaixa input:focus-visible {
+    outline: 1px solid var(--marromEscuro-color);
+}
+
+.inputCaixa label,
+.generoTitulo h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.inputCaixa input::placeholder {
+    color: #000000be;
+}
+
+.generoGrupo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.generoInputs {
+    display: flex;
+    align-items: center;
+}
+
+.generoInputs input {
+    margin-right: 0.35rem;
+}
+
+.generoInputs label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.botaoContinuar button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: var(--marromEscuro-color);
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botaoContinuar button:hover {
+    background-color: var(--marromEscuro-color);
+}
+
+.botaoContinuar button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: white;
+}
+
+.generoInput{
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 1330px) {
+    .formQuadrado {
+        display: none;
+    }
+    .displayGeral {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .displayGeral {
+        width: 90%;
+        height: auto;
+    }
+    .inputGrupo {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .generoInputs {
+        margin-top: 2rem;
+    }
+    .generoGrupo {
+        flex-direction: column;
+    }
+    .generoTitulo h6 {
+        margin: 0;
+    }
+    .generoInput {
+        margin-top: 0.5rem;
+    }
 }
 /* Footer da pagina*/
 .footerPrincipal {
