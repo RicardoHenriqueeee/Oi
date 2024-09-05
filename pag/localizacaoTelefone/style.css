@@ -180,105 +180,25 @@ body {
     text-decoration: overline solid 2px;
 }
 
-/* Login do usuário*/
-.displayForm{
+/* Localizao google maps*/
+
+.geralLocalizacao{
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-.parteForaForm {
-    width: 420px;
-    background: var(--marromEscuro-color);
-    color: white;
-    border-radius: 10px;
-    padding: 30px 40px;
-}
-
-.parteForaForm h1 {
-    font-size: 36px;
-    text-align: center;
     font-family: var(--fonte-primaria);
 }
 
-.parteForaForm .inputCaixa {
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
-}
-
-.inputCaixa input{
-    width: 90%;
-    height: 100%;
-    border: none;
-    outline: none;
-    border: 2px solid rgb(255, 255, 255, .2);
-    border-radius: 40px;
-    font-size: 16px;
-    color: black;
-    font-family: var(--fonte-primaria);
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.inputCaixa input::placeholder{
-    color: black;
-}
-
-.parteForaForm .relembrarDepois{
+.localizacaoGoogle{
+    padding: 4%;
     display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    margin: -15px 0 15px;
-    font-family: var(--fonte-primaria);
+    flex-direction: column;
+
 }
 
-.relembrarDepois label input{
-    accent-color: white;
-    margin-right: 3px;
+.localizacaoGoogle p{
+    padding-top: 7%;
 }
 
-.relembrarDepois a{
-    color: white;
-    text-decoration: none;
-}
-
-.relembrarDepois a:hover{
-    text-decoration: underline;
-}
-
-.parteForaForm .botaoEnviar{
-    width: 100%;
-    height: 45px;
-    background: white;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px black;
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
-    font-family: var(--fonte-primaria);
-}
-
-.parteForaForm .cadastroLink{
-    font-size: 14px;
-    text-align: center;
-    margin-top: 20px 0 15px;
-    font-family: var(--fonte-primaria);
-}
-
-.cadastroLink p a{
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.cadastroLink p a:hover{
-    text-decoration: underline;
-}
 /* Footer da pagina*/
 .footerPrincipal {
     background-color: var(--marromClaro-color);
