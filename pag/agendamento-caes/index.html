@@ -17,7 +17,7 @@
     <header><!-- Cabeçalho-->
         <div class="logoBarraIcones"><!-- Logo, barra e icones-->
             <div class="logoImagem"><!-- Logo da pagina-->
-                <a href="../../index.html"><img src="../../img/logoPetShop.png" alt="logoPetShop.png"></a>
+                <a href="../../index.html"><img src="../../img/logoPetShop.png" alt="logoSite"></a>
             </div>
             <div class="buscaBox"><!-- Barra de pesquisa (Não está funcional, apenas visual)-->
                 <div class="lupaBusca"><!-- Icone de lupa-->
@@ -29,10 +29,11 @@
             </div>
             <div class="telCarPerf">
                 <div class="telefone"><!-- Icone de telefone-->
-                    <a href="index.html"><img src="../../img/iconeTelefone.png" alt="iconeTelefone.png"></a>
+                    <a href="../localizacaoTelefone/index.html"><img src="../../img/iconeTelefone.png"
+                            alt="iconeTelefone"></a>
                 </div>
                 <div class="carrinhoCompras"><!-- Icone do carrinho de compras(Não esta funcional)-->
-                    <img src="../../img/carrinhoCompras.png" alt="iconeCarrinhoCompras.png">
+                    <img src="../../img/carrinhoCompras.png" alt="iconeCarrinhoCompras">
                 </div>
                 <div class="juntaTextoIcone">
                     <div class="iconePerfil"><!-- Icone do perfil-->
@@ -54,7 +55,7 @@
             <a href="../servicosGeral/index.html">
                 <p>Serviços</p>
             </a>
-            <a href="../agendamento-caes/index.html">
+            <a href="index.html">
                 <p>Agendamentos</p>
             </a>
             <a href="">
@@ -67,27 +68,59 @@
         </nav>
     </header><!-- Fim do cabeçalho-->
     <main><!-- Corpo da pagina-->
-        <div class="geralLocalizacao">
-            <div class="localizacaoGoogle"><!-- Localização google maps-->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.243722471963!2d-51.17851212352406!3d-30.05854763193238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951977fec3400945%3A0xfa424b0ca6868f88!2sMuseu%20de%20Ci%C3%AAncia%20e%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1725568354609!5m2!1spt-BR!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="register-pet-general">
+            <div class="register-pet-block">
+                <img src="../../img/cachorro-agendamento.png" alt="pet-image-icon.png">
+                <form action="#"></form>
+                <div class="register-pet-information">
+                    <div class="background-register">
+                        <h1>Cadastre seu Pet</h1>
+                        <div class="input-box">
+                            <label for="Nome">Nome:</label>
+                            <input id="Nome" type="text" name="Nome" placeholder="Nome do seu pet" required>
+                        </div>
 
-                <p>
-                    Av. Ipiranga, 6681 - Partenon, Porto Alegre - RS, 90619-900, ligue para a <br>
-                    Central de Atendimento pelo telefone (51) 93466 - 2355 para resolver qualquer duvida. <br>
-                </p>
+                        <div class="input-box">
+                            <label for="Temperamento">Temperamento:</label>
+                            <input id="Temperamento" type="text" name="Temperamento"
+                                placeholder="Seu pet é manso ou brabo" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="Raça">Raça:</label>
+                            <input id="Raça" type="text" name="Raça" placeholder="Qual a raça do pet" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="Tipo">Tipo:</label>
+                            <input id="Tipo" type="text" name="Tipo" placeholder="Tele busca ou retirada" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="Idade">Idade:</label>
+                            <input id="Idade" type="text" name="Idade" placeholder="Digite a idade do pet" required>
+                        </div>
+                        <p>Escolha o serviço</p>
+                        <select name="list">
+                            <option value="1">Médico</option>
+                            <option value="2">Tosa</option>
+                            <option value="3">Banho</option>
+                        </select>
+                        <div class="register-pet-buttom">
+                            <button type="submit"><a href="#">Cadastrar</a> </button>
+                        </div>
+                    </div>
+                </div>
+                </form>
             </div>
         </div>
     </main><!-- Fim do corpo da pagina-->
     <footer><!-- Parte de baixo do pagina-->
         <br>
         <div class="footerPrincipal">
-            <img src="../../img/youtubeEntretenimento.png" alt="youtubeIcon.png">
-            <img src="../../img/whatsappRedeSocial.png" alt="whatsappIcon.png">
-            <img src="../../img/twitterRedeSocial.png" alt="twitterIcon.png">
-            <img src="../../img/instagramRedeSocial.png" alt="instagramIcon.png">
+            <img src="../../img/youtubeEntretenimento.png" alt="youtubeIcon">
+            <img src="../../img/whatsappRedeSocial.png" alt="whatsapp-icon">
+            <img src="../../img/twitterRedeSocial.png" alt="twitter-icon">
+            <img src="../../img/instagramRedeSocial.png" alt="instagram-icon">
             <div class="faleConosco">
                 <p>Fale conosco</p>
             </div>
